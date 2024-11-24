@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Art Memories</title>
+    <style>
+      /* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-image: ;
+    background-image: url('https://png.pngtree.com/thumb_back/fw800/background/20231020/pngtree-abstract-art-background-hand-drawn-oil-painting-texture-image_13679350.png'); /* Path to background image */
+    
+    color: #333;
+}
+
+h1 {
+    margin-top: 20px;
+    font-size: 2.5em;
+    color: #444;
+}
+
+p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+/* Upload Section Styling */
+.upload-section {
+    margin: 20px;
+}
+
+.upload-button {
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    border: none;
+    background-color: #1e90ff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.upload-button:hover {
+    background-color: #3c8dff;
+}
+
+/* Art Gallery Styles */
+.art-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 230px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+.art-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.art-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.art-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.art-item p {
+    padding: 10px;
+    font-size: 1em;
+    color: #555;
+}
+
+/* Footer Styles */
+footer {
+    margin-top: 20px;
+    background-color: #444;
+    color: #fff;
+    padding: 10px 0;
+    font-size: 0.9em;
+}
+
+/* Moving Name with Hearts */
+.moving-name {
+    position: absolute;
+    top: 100px; /* Adjust position on the page */
+    right: -300px; /* Start outside the screen on the right */
+    font-size: 2em;
+    font-weight: bold;
+    color: #444;
+    animation: moveName 10s linear infinite; /* Smooth continuous movement */
+    display: inline-flex; /* Keeps hearts and name aligned */
+    align-items: center;
+}
+
+/* Keyframes for moving the name */
+@keyframes moveName {
+    0% {
+        right: -300px; /* Start off-screen on the right */
+    }
+    100% {
+        right: 100%; /* Move off-screen to the left */
+    }
+}
+
+/* Styling for the hearts */
+.moving-name span.name {
+    color: #8B4513; /* Wooden color for "Aditi" */
+    margin: 0 10px; /* Space between hearts and name */
+}
+
+    </style>
+</head>
+<body>
+    <h1>My Art Memories</h1>
+    <div class="moving-name">
+        ❤️ <span class="name">Aditi</span> ❤️
+    </div>
+
+    <p>Welcome to my collection of cherished artworks. Each piece holds a special memory.</p>
+    
+    <div class="upload-section">
+        <label for="fileInput">
+            <button class="upload-button">Upload Art</button>
+        </label>
+        <input type="file" id="fileInput" accept="image/*" style="display: none;" />
+    </div>
+
+    <div class="art-gallery">
+        <div class="art-item">
+            <img src="https://www.dltk-kids.com/articles/blog/images/decorated-terra-cotta-pots/pots-flowers.jpg" alt="Art 1">
+            <p>"Grass Pot" - Created on March 5, 2023</p>
+        </div>
+      <div class="art-item">
+            <img src="https://www.dltk-kids.com/articles/blog/images/decorated-terra-cotta-pots/pots-abstract.jpg" alt="Art 2">
+            <p>"Colour Pot" - Created on March 12, 2022</p>
+        </div>
+       <div class="art-item">
+            <img src="https://s7ap1.scene7.com/is/image/incredibleindia/channapatna-toys-and-dolls-Karnataka-1-craft-hero?qlt=82&ts=1726641410733" alt="Art 3">
+            <p>"Channapattana Doll" - Created on March 22, 2021</p>
+        </div>
+         <div class="art-item">
+            <img src="https://hasthakalalustores.com/cdn/shop/products/il_fullxfull.2893096431_an2u.jpg?v=1659887643" alt="Art ">
+            <p>"Budda Doll" - Created on April 26, 2020</p>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>2024 My Art Memories | Designed with ♥</p>
+    </footer>
+</body>
+</html>
